@@ -2,7 +2,7 @@
   "name": "Sendinblue-API",
   "version": "1.0.0",
   "description": "This is the Sendinblue Node.js library. It implements the various exposed APIs that you can read more about on https://apidocs.sendinblue.com.",
-  "main": "sendinblue.js",
+  "main": "sendinblue-api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
