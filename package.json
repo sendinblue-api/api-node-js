@@ -1,0 +1,25 @@
+{
+  "name": "Sendinblue-API",
+  "version": "1.0.0",
+  "description": "This is the Sendinblue Node.js library. It implements the various exposed APIs that you can read more about on https://apidocs.sendinblue.com.",
+  "main": "sendinblue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sendinblue-api/api-node-js.git"
+  },
+  "author": {
+    "name" : "SendinBlue",
+    "email": "developers@sendinblue.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sendinblue-api/api-node-js/issues"
+  },
+  "homepage": "https://github.com/sendinblue-api/api-node-js",
+  "dependencies": {
+    "restler": "^3.2.2"
+  }
+}
