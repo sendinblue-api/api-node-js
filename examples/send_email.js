@@ -1,6 +1,6 @@
 
 var sendinblue = require('../sendinblue-api');
-var sendinObj = new sendinblue('https://api.sendinblue.com/v2.0/' , 'your_api_key');
+var sendinObj = new sendinblue('https://api.sendinblue.com/v2.0/' , 'xnZCHqGbBVTXRjU0');
 
 var opts =	
 {
@@ -25,3 +25,15 @@ sendinObj.send_email(opts).on('complete', function(data) {
 	data = JSON.parse(data);
 	console.log(data);
 });
+
+
+/*
+Output Response
+
+{
+  code: 'success',
+  message: 'Email sent successfully.',
+  data: [] 
+}
+
+*/
