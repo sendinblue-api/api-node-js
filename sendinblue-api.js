@@ -382,19 +382,6 @@ SendinblueAPI_v1_0.prototype.share_campaign = function(opts) {
 };
 
 /*
-Update the compaign status.
-@param {Object} opts contains json object with key value pair
-@options opts {Integer} id Id of campaign to update its status [Mandatory].
-@options opts {String} status Types of status. Possible values – suspended, archive, darchive, sent, queued, replicate and replicate_template ( case sensitive ) [Mandatory].
-*/
-
-SendinblueAPI_v1_0.prototype.update_campaign_status = function(opts) {
-	var id = opts['id'];
-	delete opts['id'];
-    return this.put_request("campaign/" + id + "/updatecampstatus",JSON.stringify(opts));
-};
-
-/*
 Get all the processes information under the account.
 @param {Object} opts contains json object with key value pair
 @options opts {Integer} page Maximum number of records per request is 50, if there are more than 50 processes then you can use this parameter to get next 50 results [Mandatory].
@@ -636,7 +623,7 @@ Delete already existing users in the SendinBlue contacts.
 
 
 SendinblueAPI_v1_0.prototype.delete_user = function(opts) {	
-	return this.delete_request("user/" + opts.email);
+	return this.delete_request("user/" + opts.email,"");
 };
 
 /*
